@@ -5,40 +5,120 @@
 }
 
 body {
-
-    width: 975px;
-    margin: auto;
-    font-family: 'Roboto', sans-serif;
+    display: grid;
+    grid-template-rows: 100px minmax(500px ,1fr ) 50px;
+    row-gap: 30px;
+     font-family: 'Roboto', sans-serif;
 }
 
-header{
-    
+header {
     text-align: center;
-    margin-top: 30px;
-    font-family: 'Roboto', sans-serif;
-    font-size: xx-large;
-    background-color: green;
+    background-color:  #3f8f8d;
+    height: 100px;
+    font-size: 34px;
+    font-weight: bolder;
     color: white;
 }
+
+h1 {
+    padding-top: 30px;
+}
+
 main {
-    margin-top: 25%;
-}
-
-main form {
-    box-shadow: 1px black;
-    background-color: chartreuse;
-    color: white;
-}
-
-main table {
-    background-color: #1ebbd7;
-    color: white;
-}
-
-.input {
+    width: 60%;
+    margin: auto;
     
-    background-color: #a10909;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    gap: 30px;
+}
+
+fieldset {
+    border-style: dashed;
+    border-width: 1px;
+    border-color: gray;
+    border-radius: 5px;
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+form {
+    width: 80%;
+    margin: auto;
+    
+}
+
+label,input {
+    display: inherit;
+    width: 100%;
+
+ 
+}
+
+input,select,button {
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+
+.saveBtn {
+    background-color: #609c4d ;
+}
+
+.clearBtn {
+    background-color:#ac0d0d ;
+  
+}
+
+.saveBtn,.clearBtn {
+    width: 35%;
+    display:inline-block;
+    cursor: pointer;
+    padding: 5px;
+ 
     color: white;
+    border: none;
+}
+label {
+    font-weight: bold;
 }
 
 
+
+table tr:nth-child(odd){
+    background-color: #f6b8d1;
+}
+
+table tr:nth-child(even){
+    background-color: #ffd3de;
+}
+
+td , th , td span {
+  
+    padding: 3px 10px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+th {
+    background-color: #ffc0d0;
+  font-weight: bold;
+    padding: 10px 35px;
+    
+  
+}
+
+tr {
+    border-style: solid;
+    border-width: 3px ;
+    border-color: ivory;
+}
+
+span {
+    color: red;
+    cursor: pointer;
+}
+
+img{
+    width: 80px;
+}
