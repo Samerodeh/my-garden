@@ -1,65 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
 
-<link rel="stylesheet" href="./css/reset.css">
-<link rel="stylesheet" href="./css/style.css">
+    <title>My Garden</title>
+    
+    <link rel="stylesheet" href="./css/reset.css">
+    
+    <link rel="stylesheet" href="./css/style.css">
+    
 </head>
+    
 <body>
-    <header><h1>My Fabulous Garden</h1></header>
-
+    
+    <header>
+        <h1>My Fabulous Garden</h1>
+    </header>
+    
     <main>
-
         
-
+<div class="formSection">
+    
+<form id="form">
+    
 <fieldset>
+    
+<legend>New Flower</legend>
 
-<legend>flowers</legend>
-
-<form action="" id="form">
-
-<label for="name">name</label>
-<input type="text" name="name" id="">
-<br>
-<label for="image">image</label>
-<select name="" id="">
-
-<option value="Alstroemerias" id="Alstroemerias"></option>
-<option value="Gardenias" id="Gardenias"></option>
-<option value="Orchids" id="Orchids"></option>
-<option value="Roses" id="Roses"></option>
-<option value="Sunflowers" id="Sunflowers"></option>
-<option value="Tulips" id="Tulips"></option>
-<option value="Peonies" id="Peonies"></option>
+<label for="flower_name">Name</label>
+<input type="text" name="" id="flower_name" required>
+<label for="flower_img">Image</label>
+<select name="" id="flower_img" required>
+<option value="">---</option>
+<option value="alstroemerias">Alstroemerias</option>
+<option value="gardenias">Gardenias</option>
+<option value="orchids">Orchids</option>
+<option value="roses">Roses</option>
+<option value="sunflowers">Sunflowers</option>
+<option value="tulips">Tulips</option>
+<option value="peonies">Peonies</option>
 
 </select>
-<br>
-<label for="season">season</label>
-<input type="text" name="season">
-<br>
-<input id="input" type="submit">
+<label for="season">Season</label>
+<input type="text" name="" id="season">
 
-</form>
+<input type="submit" value="Save" class="saveBtn">
+<button type="button" onclick="clearTable()" class="clearBtn">Clear LS</button>
+
+
 
 </fieldset>
 
-<section>
 
-<table id="table"></table>
+</form>
 
-</section>
 
+</div>
+        
+<div class="tableSection">
+    <table id="table"></table>
+    
+        </div>
 
 
     </main>
+    <footer>
+        
+    </footer>
 
-    <footer></footer>
-
-<script src="./app.js"></script>
-
+    <script src="./js/app.js"></script>
+    
 </body>
 </html>
